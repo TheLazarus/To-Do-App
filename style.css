@@ -1,0 +1,35 @@
+ * {
+     margin: 0;
+     padding: 0;
+     background-color:whitesmoke;
+ }
+
+ .wrapper {
+     width: 100%;
+
+ }
+ .doneTodo {
+    text-decoration: line-through;
+}
+ .todo-container{
+     margin:10px;
+     font-family: 'Righteous', cursive;
+     font-size:20px;
+ }
+ .todo-checkbox{
+     margin-right: 30px;
+ }
+ #Header {
+font-family: 'Righteous',cursive;
+font-size: 30px;
+color:black;
+padding: 10px 10px;
+ }
+
+#todo-form{
+    font-family: 'Righteous',cursive;
+    font-size: 20px;
+    color:darkgreen;
+    padding: 0px 0px 0px 10px;
+    margin:0px;
+}

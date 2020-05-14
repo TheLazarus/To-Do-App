@@ -3,7 +3,7 @@ const vm = new Vue({            //main VUe instance
         el: '#todoapp',
         data: {
 
-            title: 'Hello World',
+            title: 'To-Do',
             newtodo: '',
             todoList: []
         },
