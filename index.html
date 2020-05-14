@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ez-css.now.sh">
+    <title>To-Do Application with Vue.js</title>
+    <style>
+        .doneTodo {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    
+    <main id="todoapp">
+
+        <h3>{{title}}</h3>
+        <form @submit.prevent="addTodo">
+            
+            <label for="newTodo">New Todo</label>
+            <input v-model="newtodo" type="text" name="newTodo" id="newTodo" value ="">
+            <button type="submit" name="button">Add</button>
+        </form>
+        <ul>
+            <li v-for="todo in todoList">
+            <input type="checkbox" v-model="todo.done">
+            <span :class="{doneTodo : todo.done}">{{todo.title}}</span>    
+            <button @click="removeTodo(todo)" type="button">Remove</button>
+            
+            </li>
+        </ul>
+        
+    </main>
+
+<script src ="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
+<script src ="app.js"></script>
+</body>
+</html>
